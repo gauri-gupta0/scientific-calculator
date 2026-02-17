@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+    font-weight: bold;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b1a0e;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(0,0,0,0.15) 2px,
+            rgba(0,0,0,0.15) 4px
+        );
+}
+
+.calculator{
+    padding: 24px 20px 20px;
+    border: 4px solid #5a3e28;
+    border-radius: 8px;
+    box-shadow:
+        0px 4px 20px rgba(0,0,0,0.9),
+        inset 0 0 40px rgba(0,0,0,0.3);
+    background: linear-gradient(145deg, #c4a87c, #a68b5b);
+    position: relative;
+}
+
+/* Retro label */
+.calculator::before {
+    content: 'RETRO-CALC 80';
+    display: block;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: #5a3e28;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+}
+
+input{
+    width: 320px;
+    padding: 20px 24px;
+    margin: 0 10px 10px;
+    background: #3a4a2a;
+    box-shadow:
+        inset 0px 2px 12px rgba(0,0,0,0.7),
+        0 1px 0 rgba(255,255,255,0.2);
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    text-align: right;
+    color: #a8d85e;
+    border: 3px solid #2a3620;
+    border-radius: 6px;
+    text-shadow: 0 0 8px rgba(168,216,94,0.5);
+    /* Slight scanline effect on display */
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(0,0,0,0.12) 2px,
+            rgba(0,0,0,0.12) 4px
+        );
+}
+
+input::placeholder{
+    color: #6a8a3e;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    margin: 6px 10px;
+    color: #f0e6d2;
+    background: linear-gradient(180deg, #6b5b4a, #4a3c2e);
+    font-family: 'VT323', monospace;
+    font-size: 26px;
+    cursor: pointer;
+    border: 2px solid #3a2e22;
+    border-top-color: #8a7a68;
+    border-left-color: #8a7a68;
+    border-radius: 6px;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+    box-shadow:
+        0 3px 0 #2a1e14,
+        0 4px 8px rgba(0,0,0,0.4);
+    transition: all 0.05s ease;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow:
+        0 1px 0 #2a1e14,
+        0 2px 4px rgba(0,0,0,0.3);
+}
+
+.ac, .del {
+    font-size: 22px;
+}
+
+button:hover{
+    color: #fff;
+    background: linear-gradient(180deg, #d4762c, #b85e1a);
+    border-top-color: #e89040;
+    border-left-color: #e89040;
+}
+
+.equalBtn{
+    background: linear-gradient(180deg, #d4762c, #a85210);
+    border-top-color: #e89040;
+    border-left-color: #e89040;
+    color: #fff;
+}
+
+.operator{
+    color: #f0a848;
+}
