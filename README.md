@@ -1,6 +1,7 @@
 # Scientific Retro Calculator
 
 A web-based scientific calculator featuring a nostalgic 80s retro aesthetic. This calculator handles basic arithmetic, advanced scientific functions, and solves systems of linear equations.
+Unlike the ones on youtube, this one can actually solve linear equations in both 2 and 3 variables.
 
 ## LIVE DEMO: https://gauri-gupta0.github.io/scientific-calculator/
 
